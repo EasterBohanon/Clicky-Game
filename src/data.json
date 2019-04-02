@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "image": "/assets/images/Batman.jpg",
+      "clicked": false
+    },
+    {
+      "id": 2,
+      "image": "/assets/images/BlackPanther.jpg",
+      "clicked": false
+    },
+    {
+      "id": 3,
+      "image": "/assets/images/CaptainAmerica.jpg",
+      "clicked": false
+    },
+    {
+      "id": 4,
+      "image": "/assets/images/cyborg.jpg",
+      "clicked": false
+    },
+    {
+      "id": 5,
+      "image": "/assets/images/Spiderman.jpg",
+      "clicked": false
+    },
+    {
+      "id": 6,
+      "image": "/assets/images/superman.jpeg",
+      "clicked": false
+    },
+    {
+      "id": 7,
+      "image": "/assets/images/WonderWoman.jpeg",
+      "clicked": false
+    }
+  ]
+  
