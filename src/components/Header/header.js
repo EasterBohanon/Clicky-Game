@@ -1,35 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
+import Instructions from "../Instructions/instructions.js";
 import "./header.css";
 
-const styles = {
-  root: {
-    flexGrow: 1,
-  },
-};
 
-function SimpleAppBar(props) {
-  const { classes } = props;
+function Header() {
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static" color="default">
-        <Toolbar>
-          <Typography variant="h6" color="inherit">
-           Click That Super Hero!
-          </Typography>
-        </Toolbar>
-      </AppBar>
+    <div className="header">
+      <nav className="navbar navbar-light bg-light">
+        <span className="navbar-brand mb-0 h1">Click That Super Hero</span>
+      </nav>
+      <Instructions/>
     </div>
   );
 }
 
-SimpleAppBar.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
 
-export default withStyles(styles)(SimpleAppBar);
+
+export default Header;
