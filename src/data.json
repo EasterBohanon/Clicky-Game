@@ -1,39 +1,60 @@
 [
     {
       "id": 1,
-      "image": "../public/assets/images/Batman.jpg",
+      "image": "./assets/images/Batman.jpg",
       "clicked": false
     },
     {
       "id": 2,
-      "image": "../public/assets/images/BlackPanther.jpg",
+      "image": "./assets/images/BlackPanther.jpg",
       "clicked": false
     },
     {
       "id": 3,
-      "image": "../public/assets/images/CaptainAmerica.jpg",
+      "image": "./assets/images/CaptainAmerica.jpg",
       "clicked": false
     },
     {
       "id": 4,
-      "image": "../public/assets/images/cyborg.jpg",
+      "image": "./assets/images/cyborg.jpg",
       "clicked": false
     },
     {
       "id": 5,
-      "image": "../public/assets/images/Spiderman.jpg",
+      "image": "assets/images/Spiderman.jpg",
       "clicked": false
     },
     {
       "id": 6,
-      "image": "../public/assets/images/superman.jpeg",
+      "image": "assets/images/superman.jpeg",
       "clicked": false
     },
     {
       "id": 7,
-      "image": "../public/assets/images/WonderWoman.jpeg",
+      "image": "assets/images/WonderWoman.jpeg",
+      "clicked": false
+    },
+    {
+      "id": 8,
+      "image": "assets/images/gamora.jpg",
+      "clicked": false
+    },
+    {
+      "id": 9,
+      "image": "assets/images/IronMan.jpg",
+      "clicked": false
+    },
+    {
+      "id": 10,
+      "image": "assets/images/SHAZAM.jpg",
+      "clicked": false
+    },
+    {
+      "id": 11,
+      "image": "assets/images/starlord.jpg",
       "clicked": false
     }
+
     
 
   ]

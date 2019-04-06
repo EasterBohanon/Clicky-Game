@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from "../Header/header.js";
 import Container from "../Container/container.js";
+import Pictures from "../Pictures/pictures.js";
 import ClickItem from "../ClickItem/clickItem.js"
 import Footer from "../Footer/footer.js";
 import data from "../../data.json";
@@ -9,13 +10,13 @@ class Game extends Component {
     state = {
         data,
         score: 0,
-        topScore: 0,
+        hiscore: 0,
         alreadyClicked: []
     }
 
     componentDidMount() {
         this.setState({ data: this.shuffleImages(this.state.data) });
-
+        console.log(data)
     }
 
     shuffleImages = data => {
@@ -67,14 +68,14 @@ class Game extends Component {
 
     handleWin = newData => {
         // update score
-        const { topScore, score } = this.state;
+        const { hiscore, score } = this.state;
         const newScore = score + 1;
-        const newTopScore = Math.max(newScore, topScore);
+        const newTopScore = Math.max(newScore, hiscore);
 
         this.setState({
-            data: this.shuffleData(newData),
+            data: this.shuffleImages(newData),
             score: newScore,
-            topScore: newTopScore
+            hiscore: newTopScore
         });
 
     };
@@ -91,17 +92,18 @@ class Game extends Component {
             <div>
                 <Header />
                 <br></br>
-                <Container score ={this.state.score} topScore ={this.state.topScore} >
-                 {this.state.data.map(item =>(
+                <Container score ={this.state.score} hiscore ={this.state.hiscore}>
+                {this.state.data.map(item =>(
                      <ClickItem 
+                     alt={item.id}
                      key={item.id}
                      id={item.id}
                      handleClick={this.handleClickItem}
-                     image ={item.image}
+                     src={process.env.PUBLIC_URL + item.image}
                      />
                  ))}
-                </Container>
-               
+                 </Container>
+                 <br></br>
                 <Footer />
 
             </div>

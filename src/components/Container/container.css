@@ -1,3 +1,15 @@
 .container{
-    background-color: blue;
+    background-color: red;
+  
+    
+}
+h1 {
+    color: black;
+}
+@media (min-width: 1100px) {
+    .container {
+      padding-left: 100px;
+      padding-right: 100px;
+      width: 1100px;
+    }
 }

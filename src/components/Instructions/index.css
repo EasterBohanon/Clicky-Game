@@ -1,0 +1,15 @@
+#instruct-header {
+background-image: url("./hero-header.jpg");
+background-size: contain;
+  background-position: center;
+}
+
+h1, p{
+    color: white;
+}
+
+#instructions {
+    color: black;
+    opacity: .8;
+
+}

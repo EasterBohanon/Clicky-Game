@@ -6,10 +6,11 @@ function Container(props) {
     <div className="container">
    <div>
       <div className="card">
-      <div score={props.score}  topScore={props.topScore}>
       <h1>Points: {props.score} </h1>
-      <h1>Max Points:{props.topScore} </h1>
-      </div>
+      <h1>Max Points:{props.hiscore} </h1>
+
+
+      {props.children}
       </div>
   </div>
   </div>
